@@ -1,11 +1,14 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class GameLogicTest {
 
     private Deck deck;
     private Player player1;
     private Player player2;
+    private GameLogic gameLogic;
 
 
     @Before
@@ -15,13 +18,19 @@ public class GameLogicTest {
         deck.shuffle();
         player1 = new Player("Grant");
         player2 = new Player("Ailsa");
+        gameLogic = new GameLogic(deck, player1, player2);
     }
 
     @Test
     public void canDealCardToPlayer1(){
-        Card dealtCard = deck.dealCard();
-        player1.receiveCard(card);
-        assertEquals(1, player.hand.size());
+        gameLogic.dealCard(player1);
+        assertEquals(1, player1.getHand().size());
+    }
+
+    @Test
+    public void canDealCardToPlayer2(){
+        gameLogic.dealCard(player2);
+        assertEquals(1, player2.getHand().size());
     }
 
 }

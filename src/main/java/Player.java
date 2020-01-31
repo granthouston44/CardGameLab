@@ -10,6 +10,15 @@ public class Player {
         this.hand = new ArrayList<>();
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public ArrayList<Card> getHand() {
+        return hand;
+    }
 
+    public void receiveCard(Card dealtCard) {
+        this.hand.add(dealtCard);
+    }
 }
