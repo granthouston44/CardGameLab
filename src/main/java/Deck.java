@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
     private Card card;
@@ -9,10 +10,12 @@ public class Deck {
     }
 
     public int getCardCount() {
+
         return this.cards.size();
     }
 
     public void addCard(Card card) {
+
         this.cards.add(card);
     }
 
@@ -27,5 +30,9 @@ public class Deck {
         // For every rank
         // Create new card with that suit and rank
         // Add to this cards
+    }
+
+    public void shuffle() {
+        Collections.shuffle(cards);
     }
 }

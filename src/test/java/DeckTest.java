@@ -1,3 +1,4 @@
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,9 +15,8 @@ public class DeckTest {
         card = new Card(SuitType.CLUBS,RankType.ACE);
     }
     @Test
-    public void canPopulateDeckWithOneCard(){
-        deck.addCard(card);
-        assertEquals(1, deck.getCardCount());
+    public void deckStartsEmpty(){
+        assertEquals(0, deck.getCardCount());
     }
 
     @Test
@@ -25,6 +25,21 @@ public class DeckTest {
         assertEquals(52, deck.getCardCount());
     }
 
+    @Test
+    public void canShuffleCards(){
+        deck.populate();
+        deck.shuffle();
+            System.out.println(deck);
+        }
+
+
+
+
 
 
 }
+
+
+
+
+
