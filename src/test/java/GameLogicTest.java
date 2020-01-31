@@ -1,18 +1,19 @@
 import org.junit.Before;
 
-public class PlayerTest {
+public class GameLogicTest {
 
+    private Deck deck;
     private Player player1;
     private Player player2;
-    private Card card;
+
 
     @Before
     public void before(){
+        deck = new Deck();
         player1 = new Player("Grant");
         player2 = new Player("Ailsa");
-
-
-
     }
+
+
 
 }
