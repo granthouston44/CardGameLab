@@ -32,6 +32,12 @@ public class DeckTest {
             System.out.println(deck);
         }
 
+        @Test
+    public void canRemoveCard(){
+        deck.removeCard()
+                assertEquals(51, deck.getCardCount())
+        }
+
 
 
 
