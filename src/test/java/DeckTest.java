@@ -12,7 +12,7 @@ public class DeckTest {
     @Before
     public void before(){
         deck = new Deck();
-        card = new Card(SuitType.CLUBS,RankType.ACE);
+        deck.populate();
     }
     @Test
     public void deckStartsEmpty(){
@@ -34,8 +34,8 @@ public class DeckTest {
 
         @Test
     public void canRemoveCard(){
-        deck.removeCard()
-                assertEquals(51, deck.getCardCount())
+        deck.removeCard();
+                assertEquals(51, deck.getCardCount());
         }
 
 
