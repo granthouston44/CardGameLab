@@ -16,8 +16,8 @@ public class GameLogicTest {
         deck = new Deck();
         deck.populate();
         deck.shuffle();
-        player1 = new Player("Grant");
-        player2 = new Player("Ailsa");
+        player1 = new Player();
+        player2 = new Player();
         gameLogic = new GameLogic(deck, player1, player2);
     }
 
@@ -32,5 +32,7 @@ public class GameLogicTest {
         gameLogic.dealCard(player2);
         assertEquals(1, player2.getHand().size());
     }
+
+
 
 }

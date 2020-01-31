@@ -5,8 +5,8 @@ public class Player {
     private String name;
     private ArrayList<Card> hand;
 
-    public Player(String name){
-        this.name = name;
+    public Player(){
+        this.name = "" ;
         this.hand = new ArrayList<>();
     }
 
@@ -20,5 +20,9 @@ public class Player {
 
     public void receiveCard(Card dealtCard) {
         this.hand.add(dealtCard);
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
