@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DeckTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DeckTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580501151895</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Game class and test class written">
+      <created>1580502021657</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580502021657</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,7 +175,8 @@
     <MESSAGE value="shuffle test passed" />
     <MESSAGE value="remove card from deck test written" />
     <MESSAGE value="Player class written" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player class written" />
+    <MESSAGE value="Game class and test class written" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game class and test class written" />
   </component>
   <component name="masterDetails">
     <states>
