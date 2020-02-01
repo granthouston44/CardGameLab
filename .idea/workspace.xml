@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
+    <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="basic UI class setup">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,12 +62,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.canGivePlayerName">
-    <configuration name="DeckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Runner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="CardGameLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeckTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.PlayerTest.canGivePlayerName" />
         <item itemvalue="JUnit.GameLogicTest.canDealCardToPlayer1" />
         <item itemvalue="JUnit.DeckTest.canRemoveCard" />
         <item itemvalue="JUnit.DeckTest.canShuffleCards" />
-        <item itemvalue="JUnit.DeckTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580503874090</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="runner file began, player class refactored, added player name setter">
+      <created>1580507054386</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580507054386</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,14 +202,16 @@
     <MESSAGE value="game test, can deal card to player test written" />
     <MESSAGE value="game test, can deal card to player test passed" />
     <MESSAGE value="wrote deal card method and refactored GameLogic" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote deal card method and refactored GameLogic" />
+    <MESSAGE value="runner file began, player class refactored, added player name setter" />
+    <MESSAGE value="basic UI class setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic UI class setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GameLogic.java</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

@@ -10,6 +10,7 @@ public class GameLogic {
         this.player2 = player2;
     }
 
+
     public void dealCard(Player player){
         Card dealtCard = deck.dealCard();
         player.receiveCard(dealtCard);
