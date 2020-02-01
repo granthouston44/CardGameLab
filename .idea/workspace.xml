@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameLogicTest.canPlayHandPlayer2Wins">
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="CardGameLab" />
@@ -110,9 +110,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.GameLogicTest.canPlayHandPlayer2Wins" />
         <item itemvalue="JUnit.GameLogicTest.canPlayHand" />
-        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.PlayerTest.canGivePlayerName" />
         <item itemvalue="JUnit.GameLogicTest.canDealCardToPlayer1" />
       </list>
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580553830143</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="play hand test passed in game logic, player and gamelogic refactored">
+      <created>1580554566391</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1580554566391</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +224,8 @@
     <MESSAGE value="runner file began, player class refactored, added player name setter" />
     <MESSAGE value="basic UI class setup" />
     <MESSAGE value="play hand test written in game logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="play hand test written in game logic" />
+    <MESSAGE value="play hand test passed in game logic, player and gamelogic refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="play hand test passed in game logic, player and gamelogic refactored" />
   </component>
   <component name="masterDetails">
     <states>

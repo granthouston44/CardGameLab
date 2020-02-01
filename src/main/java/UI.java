@@ -24,5 +24,9 @@ public class UI {
         System.out.println("Cards have been dealt to each player!");
     }
 
+    public void whoWins(Player player){
+        System.out.println(String.format("%s wins!",player.getName()));
+    }
+
 }
 
