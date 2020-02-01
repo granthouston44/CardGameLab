@@ -16,4 +16,6 @@ public class GameLogic {
         player.receiveCard(dealtCard);
     }
 
+    public Player playHand() {
+    }
 }

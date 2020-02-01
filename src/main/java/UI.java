@@ -20,5 +20,9 @@ public class UI {
         return name;
     }
 
+    public void cardsDealt(){
+        System.out.println("Cards have been dealt to each player!");
+    }
+
 }
 

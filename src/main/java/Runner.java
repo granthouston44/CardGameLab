@@ -13,7 +13,10 @@ public class Runner {
         String player2name = ui.getPlayer2Name();
         player1.setName(player2name);
 
-
+        game.dealCard(player1);
+        game.dealCard(player2);
+        ui.cardsDealt();
+        game.playHand();
 
 
 

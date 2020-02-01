@@ -34,6 +34,13 @@ public class GameLogicTest {
         assertEquals(1, player2.getHand().size());
     }
 
+    @Test
+    public void canPlayHand(){
+    gameLogic.dealCard(player1);
+    gameLogic.dealCard(player2);
+assertEquals(player1, gameLogic.playHand());
+    }
+
 
 
 }
