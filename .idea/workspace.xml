@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,30 +60,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="JUnit.GameLogicTest.canPlayHandPlayer2Wins">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="CardGameLab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeckTest.canRemoveCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CardGameLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeckTest" />
-      <option name="METHOD_NAME" value="canRemoveCard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeckTest.canShuffleCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CardGameLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeckTest" />
-      <option name="METHOD_NAME" value="canShuffleCards" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,6 +73,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameLogicTest" />
       <option name="METHOD_NAME" value="canDealCardToPlayer1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameLogicTest.canPlayHand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CardGameLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameLogicTest" />
+      <option name="METHOD_NAME" value="canPlayHand" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameLogicTest.canPlayHandPlayer2Wins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CardGameLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameLogicTest" />
+      <option name="METHOD_NAME" value="canPlayHandPlayer2Wins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameLogicTest.canPlayHandPlayer2Wins" />
+        <item itemvalue="JUnit.GameLogicTest.canPlayHand" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.PlayerTest.canGivePlayerName" />
         <item itemvalue="JUnit.GameLogicTest.canDealCardToPlayer1" />
-        <item itemvalue="JUnit.DeckTest.canRemoveCard" />
-        <item itemvalue="JUnit.DeckTest.canShuffleCards" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580553198408</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="play hand test written in game logic">
+      <created>1580553830143</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580553830143</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +216,8 @@
     <MESSAGE value="wrote deal card method and refactored GameLogic" />
     <MESSAGE value="runner file began, player class refactored, added player name setter" />
     <MESSAGE value="basic UI class setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic UI class setup" />
+    <MESSAGE value="play hand test written in game logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="play hand test written in game logic" />
   </component>
   <component name="masterDetails">
     <states>

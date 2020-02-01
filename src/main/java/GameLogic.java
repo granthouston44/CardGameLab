@@ -17,5 +17,11 @@ public class GameLogic {
     }
 
     public Player playHand() {
+        if (player1.getHand().getRankValue() > player2.getHand().getRankValue()){
+            return player1;
+        } else{
+            return player2;
+        }
+
     }
 }

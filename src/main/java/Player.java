@@ -14,8 +14,8 @@ public class Player {
         return name;
     }
 
-    public ArrayList<Card> getHand() {
-        return hand;
+    public Card getHand() {
+        return hand.get(0);
     }
 
     public void receiveCard(Card dealtCard) {
