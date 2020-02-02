@@ -76,6 +76,12 @@ assertEquals(player2, gameLogic.playHand());
         assertEquals(1, gameLogic.getPlayer1Score());
     }
 
+    @Test
+    public void canDealToDealer(){
+        gameLogic.dealToDealer();
+        assertEquals(1, gameLogic.getDealerHand().size());
+    }
+
 
 
 }

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class GameLogic {
 
     private Deck deck;
@@ -5,6 +7,7 @@ public class GameLogic {
     public Player player2;
     private int player1Score;
     private int player2Score;
+    private ArrayList<Card> dealerHand;
 
     public GameLogic(Deck deck, Player player1, Player player2){
         this.deck = deck;
@@ -12,6 +15,7 @@ public class GameLogic {
         this.player2 = player2;
         this.player1Score = 0;
         this.player2Score = 0;
+        this.dealerHand = new ArrayList<>();
     }
 
 
@@ -51,6 +55,12 @@ public class GameLogic {
         player2.removeHand();
     }
 
+    public ArrayList<Card> getDealerHand() {
+        return dealerHand;
+    }
 
-
+    public void dealToDealer() {
+        Card dealtCard = deck.dealCard();
+        dealerHand.add(dealtCard);
+    }
 }

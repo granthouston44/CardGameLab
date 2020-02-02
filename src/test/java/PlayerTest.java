@@ -43,5 +43,13 @@ public class PlayerTest {
         player1.receiveCard(card2);
         assertEquals(true, player1.gotBlackJack());
     }
+    @Test
+    public void canCallBlackJackFalse(){
+        card1 = new Card (SuitType.HEARTS, RankType.TWO);
+        card2 = new Card (SuitType.DIAMONDS, RankType.TEN);
+        player1.receiveCard(card1);
+        player1.receiveCard(card2);
+        assertEquals(false, player1.gotBlackJack());
+    }
 
 }

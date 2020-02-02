@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,19 +61,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.canCallBlackJack">
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Runner" />
-      <module name="CardGameLab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameLogicTest.canKeepScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameLogicTest.canDealToDealer">
+    <configuration name="GameLogicTest.canDealToDealer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameLogicTest" />
-      <option name="METHOD_NAME" value="canKeepScore" />
+      <option name="METHOD_NAME" value="canDealToDealer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,6 +77,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlayerTest" />
       <option name="METHOD_NAME" value="canCallBlackJack" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.canCallBlackJackFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CardGameLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="canCallBlackJackFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameLogicTest.canDealToDealer" />
+        <item itemvalue="JUnit.PlayerTest.canCallBlackJackFalse" />
         <item itemvalue="JUnit.PlayerTest.canCallBlackJack" />
         <item itemvalue="JUnit.PlayerTest.canCountHandValue" />
         <item itemvalue="JUnit.UITest.showScore" />
-        <item itemvalue="Application.Runner" />
-        <item itemvalue="JUnit.GameLogicTest.canKeepScore" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580663056738</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="gotBlackJack function tested">
+      <created>1580665157810</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1580665157811</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +277,8 @@
     <MESSAGE value="can now play higher or lower with an option to play again or end the game" />
     <MESSAGE value="fixed bug with player2 hand reset" />
     <MESSAGE value="get player hand value test written and passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="get player hand value test written and passed" />
+    <MESSAGE value="gotBlackJack function tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="gotBlackJack function tested" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
