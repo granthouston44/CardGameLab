@@ -35,4 +35,13 @@ public class PlayerTest {
         assertEquals(8, player1.getHandValue());
     }
 
+    @Test
+    public void canCallBlackJack(){
+        card1 = new Card (SuitType.HEARTS, RankType.ACE);
+        card2 = new Card (SuitType.DIAMONDS, RankType.TEN);
+        player1.receiveCard(card1);
+        player1.receiveCard(card2);
+        assertEquals(true, player1.gotBlackJack());
+    }
+
 }

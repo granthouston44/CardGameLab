@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Player {
 
     private String name;
+//    private Card card;
     private ArrayList<Card> hand;
     private int total;
 
@@ -41,5 +42,25 @@ public class Player {
             totalHandValue += hand.get(i).getRankValue();
         }
         return totalHandValue;
+    }
+
+    public boolean gotBlackJack(){
+        boolean gotAce = false;
+        boolean gotTen = false;
+
+        for (int i = 0; i < this.getHandSize(); i++){
+            Card tempCard = hand.get(i);
+            if (tempCard.getRankValue() == 1){
+            gotAce = true;
+            }
+
+            if (tempCard.getRankValue() == 10){
+                gotTen = true;
+            }
+        }
+        if (gotAce && gotTen == true) {
+            return true;
+        }
+        return false;
     }
 }
