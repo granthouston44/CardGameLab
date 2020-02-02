@@ -4,7 +4,8 @@ public class Runner {
         Deck deck = new Deck();
         Player player1 = new Player();
         Player player2 = new Player();
-        GameLogic game = new GameLogic(deck, player1, player2);
+        Player dealer= new Player();
+        GameLogic game = new GameLogic(deck, player1, player2, dealer);
         UI ui = new UI();
 
         ui.welcome();
@@ -23,8 +24,6 @@ public class Runner {
             game.dealToDealer();
             game.dealCard(player1);
             game.dealCard(player1);
-            game.dealCard(player2);
-            game.dealCard(player2);
             ui.cardsDealt(game);
             Player winner = game.playHand();
             ui.whoWins(winner);

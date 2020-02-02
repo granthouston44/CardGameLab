@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UITest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +63,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UITest.dealtCardStringShowsDealersCard">
+  <component name="RunManager" selected="Application.Runner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="CardGameLab" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameLogicTest.canDealToDealer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,16 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.canCountHandValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CardGameLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
-      <option name="METHOD_NAME" value="canCountHandValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UITest.dealtCardStringShowsDealersCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UITest.dealtCardStringShowsDealersCard" />
+        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.GameLogicTest.canDealToDealer" />
+        <item itemvalue="JUnit.UITest.dealtCardStringShowsDealersCard" />
         <item itemvalue="JUnit.PlayerTest.canCallBlackJackFalse" />
         <item itemvalue="JUnit.PlayerTest.canCallBlackJack" />
-        <item itemvalue="JUnit.PlayerTest.canCountHandValue" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580666393092</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="dealer card now shows when game starts">
+      <created>1580667472096</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1580667472097</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +292,8 @@
     <MESSAGE value="get player hand value test written and passed" />
     <MESSAGE value="gotBlackJack function tested" />
     <MESSAGE value="can deal to AI" />
-    <option name="LAST_COMMIT_MESSAGE" value="can deal to AI" />
+    <MESSAGE value="dealer card now shows when game starts" />
+    <option name="LAST_COMMIT_MESSAGE" value="dealer card now shows when game starts" />
   </component>
   <component name="masterDetails">
     <states>

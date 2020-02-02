@@ -22,7 +22,7 @@ public class UI {
     }
 
     public void cardsDealt(GameLogic game){
-        System.out.println(String.format("Cards have been dealt!\n Dealers card: %s, %s", game.getDealerHand().get(0).getSuit().toString(), game.getDealerHand().get(0).getRank().toString()));
+        System.out.println(String.format("Cards have been dealt!\n Dealers card: %s, %s", game.getDealerFirstCard().getSuit().toString(), game.getDealerFirstCard().getRank().toString()));
     }
 
     public void whoWins(Player player){
@@ -53,7 +53,7 @@ public class UI {
 
 
     public void score(GameLogic game) {
-        System.out.println(String.format("Current score: \n %s: %d %s: %d", game.player1.getName(), game.getPlayer1Score(), game.player2.getName(), game.getPlayer2Score()));
+        System.out.println(String.format("Player score: \n %s: %d %s: %d \n Dealer score: %d", game.player1.getName(), game.getPlayer1Score(), game.player2.getName(), game.getPlayer2Score(), game.getDealerScore()));
     }
 }
 

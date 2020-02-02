@@ -19,6 +19,7 @@ public class UITest {
     private Card card2;
 
     private Deck deck;
+    private Player dealer;
     private Player player1;
     private Player player2;
     private GameLogic gameLogic;
@@ -31,11 +32,12 @@ public class UITest {
         deck = new Deck();
         deck.populate();
         deck.shuffle();
+        dealer = new Player();
         player1 = new Player();
         player2 = new Player();
         player1.setName("Grant");
         player2.setName("Ailsa");
-        gameLogic = new GameLogic(deck, player1, player2);
+        gameLogic = new GameLogic(deck, player1, player2, dealer);
     }
 
     @Test

@@ -9,6 +9,8 @@ public class GameLogicTest {
     private Card card1;
     private Card card2;
 
+    private Player dealer;
+
     private Deck deck;
     private Player player1;
     private Player player2;
@@ -23,7 +25,7 @@ public class GameLogicTest {
         deck.shuffle();
         player1 = new Player();
         player2 = new Player();
-        gameLogic = new GameLogic(deck, player1, player2);
+        gameLogic = new GameLogic(deck, player1, player2, dealer);
     }
 
     @Test
@@ -79,7 +81,7 @@ assertEquals(player2, gameLogic.playHand());
     @Test
     public void canDealToDealer(){
         gameLogic.dealToDealer();
-        assertEquals(1, gameLogic.getDealerHand().size());
+        assertEquals(1, gameLogic.getDealerHandSize());
     }
 
 
