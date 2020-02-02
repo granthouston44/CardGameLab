@@ -48,7 +48,11 @@ public class GameLogic {
 
 
     public Player playHand() {
-        if (player1.getHandValue() > getDealerHandValue()){
+        if(player1.gotBlackJack()){
+            return player1;
+        } else if (dealer.gotBlackJack()){
+            return dealer;
+        } else if (player1.getHandValue() > getDealerHandValue()){
             player1Score += 1;
             return player1;
         } else{

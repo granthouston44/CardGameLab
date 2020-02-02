@@ -8,6 +8,8 @@ public class GameLogicTest {
 
     private Card card1;
     private Card card2;
+    private Card card3;
+    private Card card4;
 
     private Player dealer;
 
@@ -25,6 +27,7 @@ public class GameLogicTest {
         deck.shuffle();
         player1 = new Player();
         player2 = new Player();
+        dealer = new Player();
         gameLogic = new GameLogic(deck, player1, player2, dealer);
     }
 
@@ -82,6 +85,19 @@ assertEquals(player2, gameLogic.playHand());
     public void canDealToDealer(){
         gameLogic.dealToDealer();
         assertEquals(1, gameLogic.getDealerHandSize());
+    }
+
+    @Test
+    public void blackJackWins(){
+        card1 = new Card (SuitType.HEARTS, RankType.KING);
+        card2 = new Card (SuitType.DIAMONDS, RankType.ACE);
+        card3 = new Card (SuitType.DIAMONDS, RankType.KING);
+        card4 = new Card (SuitType.HEARTS, RankType.TEN);
+        player1.receiveCard(card1);
+        player1.receiveCard(card2);
+        dealer.receiveCard(card3);
+        dealer.receiveCard(card4);
+        assertEquals(player1, gameLogic.playHand());
     }
 
 
