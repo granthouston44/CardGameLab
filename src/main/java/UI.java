@@ -26,7 +26,11 @@ public class UI {
     }
 
     public void whoWins(Player player){
-        System.out.println(String.format("%s wins!",player.getName()));
+        if (player.gotBlackJack()){
+            System.out.println(String.format("%s wins with BlackJack!",player.getName()));
+        } else{
+            System.out.println(String.format("%s wins!",player.getName()));
+        }
     }
 
     public boolean playAgain(){

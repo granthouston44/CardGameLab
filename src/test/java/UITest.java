@@ -17,6 +17,8 @@ public class UITest {
     private UI ui;
     private Card card1;
     private Card card2;
+    private Card card3;
+    private Card card4;
 
     private Deck deck;
     private Player dealer;
@@ -57,6 +59,21 @@ public class UITest {
         gameLogic.playHand();
         ui.score(gameLogic);
         assertEquals("Current score: \n Grant: 1 Ailsa: 0\n", outContent.toString());
+    }
+
+    @Test
+    public void winsWithBlackJack(){
+        card1 = new Card (SuitType.HEARTS, RankType.KING);
+        card2 = new Card (SuitType.DIAMONDS, RankType.ACE);
+        card3 = new Card (SuitType.DIAMONDS, RankType.KING);
+        card4 = new Card (SuitType.HEARTS, RankType.TEN);
+        player1.receiveCard(card1);
+        player1.receiveCard(card2);
+        dealer.receiveCard(card3);
+        dealer.receiveCard(card4);
+        Player winner = gameLogic.playHand();
+        ui.whoWins(winner);
+        assertEquals("Grant wins with BlackJack!\n", outContent.toString());
     }
 
 
