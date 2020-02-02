@@ -39,6 +39,14 @@ public class UITest {
     }
 
     @Test
+    public void dealtCardStringShowsDealersCard(){
+
+        gameLogic.dealToDealer();
+        ui.cardsDealt(gameLogic);
+        assertNotNull(outContent.toString());
+    }
+
+    @Test
     public void showScore(){
         card1 = new Card (SuitType.HEARTS, RankType.KING);
         card2 = new Card (SuitType.DIAMONDS, RankType.ACE);

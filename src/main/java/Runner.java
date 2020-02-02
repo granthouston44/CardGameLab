@@ -19,9 +19,13 @@ public class Runner {
         while(choice == true){
             deck.shuffle();
             game.removeHands();
+            game.dealToDealer();
+            game.dealToDealer();
+            game.dealCard(player1);
             game.dealCard(player1);
             game.dealCard(player2);
-            ui.cardsDealt();
+            game.dealCard(player2);
+            ui.cardsDealt(game);
             Player winner = game.playHand();
             ui.whoWins(winner);
             ui.score(game);

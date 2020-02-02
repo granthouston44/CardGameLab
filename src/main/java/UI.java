@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class UI {
 
+
     public void welcome(){
         System.out.println("Welcome to JavaJack!");
     }
@@ -20,8 +21,8 @@ public class UI {
         return name;
     }
 
-    public void cardsDealt(){
-        System.out.println("Cards have been dealt to each player!");
+    public void cardsDealt(GameLogic game){
+        System.out.println(String.format("Cards have been dealt!\n Dealers card: %s, %s", game.getDealerHand().get(0).getSuit().toString(), game.getDealerHand().get(0).getRank().toString()));
     }
 
     public void whoWins(Player player){
