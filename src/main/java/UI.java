@@ -28,5 +28,26 @@ public class UI {
         System.out.println(String.format("%s wins!",player.getName()));
     }
 
+    public boolean playAgain(){
+        System.out.println("Play again?");
+        System.out.println("Enter [Y/N]");
+        Scanner sc = new Scanner(System.in);
+        String choice = sc.nextLine();
+        boolean choiceBoolean = false;
+        if(choice.equals("y") )
+        {
+        choiceBoolean = true;
+        }
+        else if(choice.equals("n"))
+        {
+            choiceBoolean = false;
+        }
+        return choiceBoolean;
+        }
+
+
+    public void gameOver() {
+        System.out.println("Thanks for playing!");
+    }
 }
 

@@ -14,8 +14,16 @@ public class Player {
         return name;
     }
 
+    public void removeHand() {
+        this.hand.clear();
+    }
+
     public Card getHand() {
         return hand.get(0);
+    }
+
+    public int getHandSize(){
+        return hand.size();
     }
 
     public void receiveCard(Card dealtCard) {

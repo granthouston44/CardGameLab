@@ -24,4 +24,8 @@ public class GameLogic {
         }
 
     }
+
+    public void removeHands() {
+        player1.removeHand();
+    }
 }

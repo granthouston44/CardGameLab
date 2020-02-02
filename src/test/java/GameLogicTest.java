@@ -56,6 +56,15 @@ assertEquals(player1, gameLogic.playHand());
 assertEquals(player2, gameLogic.playHand());
     }
 
+    @Test
+    public void canDeletePlayerHand(){
+        card1 = new Card (SuitType.HEARTS, RankType.KING);
+        card2 = new Card (SuitType.DIAMONDS, RankType.ACE);
+        player1.receiveCard(card2);
+        player2.receiveCard(card1);
+        gameLogic.removeHands();
+        assertEquals(0, player1.getHandSize());
+    }
 
 
 }

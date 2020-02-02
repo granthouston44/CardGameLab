@@ -14,22 +14,20 @@ public class Runner {
         player2.setName(player2name);
 
         deck.populate();
-        deck.shuffle();
+        Boolean choice = true;
 
-        game.dealCard(player1);
-        game.dealCard(player2);
-        ui.cardsDealt();
-        Player winner = game.playHand();
-        ui.whoWins(winner);
-
-        if(game.playAgain() == true){
+        while(choice == true){
             deck.shuffle();
+            game.removeHands();
             game.dealCard(player1);
             game.dealCard(player2);
             ui.cardsDealt();
             Player winner = game.playHand();
             ui.whoWins(winner);
+            choice = ui.playAgain();
         }
+            ui.gameOver();
+
 
 
 
