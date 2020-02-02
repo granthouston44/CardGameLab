@@ -49,5 +49,10 @@ public class UI {
     public void gameOver() {
         System.out.println("Thanks for playing!");
     }
+
+
+    public void score(GameLogic game) {
+        System.out.println(String.format("Current score: \n %s: %d %s: %d", game.player1.getName(), game.getPlayer1Score(), game.player2.getName(), game.getPlayer2Score()));
+    }
 }
 

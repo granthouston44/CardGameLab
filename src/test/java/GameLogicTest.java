@@ -66,5 +66,15 @@ assertEquals(player2, gameLogic.playHand());
         assertEquals(0, player1.getHandSize());
     }
 
+    @Test
+    public void canKeepScore(){
+        card1 = new Card (SuitType.HEARTS, RankType.KING);
+        card2 = new Card (SuitType.DIAMONDS, RankType.ACE);
+        player1.receiveCard(card1);
+        player2.receiveCard(card2);
+        gameLogic.playHand();
+        assertEquals(1, gameLogic.getPlayer1Score());
+    }
+
 
 }
