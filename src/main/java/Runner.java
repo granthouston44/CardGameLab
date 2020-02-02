@@ -24,6 +24,7 @@ public class Runner {
             ui.cardsDealt();
             Player winner = game.playHand();
             ui.whoWins(winner);
+            ui.score(game);
             choice = ui.playAgain();
         }
             ui.gameOver();
