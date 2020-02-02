@@ -4,6 +4,7 @@ public class Player {
 
     private String name;
     private ArrayList<Card> hand;
+    private int total;
 
     public Player(){
         this.name = "" ;
@@ -32,5 +33,13 @@ public class Player {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getHandValue() {
+        int totalHandValue = 0;
+        for (int i = 0; i < this.getHandSize(); i++){
+            totalHandValue += hand.get(i).getRankValue();
+        }
+        return totalHandValue;
     }
 }

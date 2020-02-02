@@ -7,7 +7,8 @@ public class PlayerTest {
 
     private Player player1;
     private Player player2;
-    private Card card;
+    private Card card1;
+    private Card card2;
 
     @Before
     public void before(){
@@ -22,6 +23,16 @@ public class PlayerTest {
     public void canGivePlayerName(){
         player1.setName("Shrek");
         assertEquals("Shrek", player1.getName());
+    }
+
+    @Test
+    public void canCountHandValue(){
+
+        card1 = new Card (SuitType.HEARTS, RankType.FIVE);
+        card2 = new Card (SuitType.DIAMONDS, RankType.THREE);
+        player1.receiveCard(card1);
+        player1.receiveCard(card2);
+        assertEquals(8, player1.getHandValue());
     }
 
 }

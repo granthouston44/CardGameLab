@@ -4,7 +4,9 @@
     <list default="true" id="a538d3a6-96be-47a7-bc83-a386444e30a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="JUnit.PlayerTest.canCountHandValue">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="CardGameLab" />
@@ -88,11 +90,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UITest.playAgainReturnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.canCountHandValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UITest" />
-      <option name="METHOD_NAME" value="playAgainReturnsTrue" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="canCountHandValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Runner" />
+        <item itemvalue="JUnit.PlayerTest.canCountHandValue" />
         <item itemvalue="JUnit.UITest.showScore" />
+        <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.GameLogicTest.canKeepScore" />
         <item itemvalue="JUnit.GameLogicTest.canDeletePlayerHand" />
-        <item itemvalue="JUnit.UITest.playAgainReturnsTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580655958813</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed bug with player2 hand reset">
+      <created>1580656342277</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1580656342277</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +259,8 @@
     <MESSAGE value="play hand test passed in game logic, player and gamelogic refactored" />
     <MESSAGE value="game can now be played and determine a winner" />
     <MESSAGE value="can now play higher or lower with an option to play again or end the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="can now play higher or lower with an option to play again or end the game" />
+    <MESSAGE value="fixed bug with player2 hand reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with player2 hand reset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
